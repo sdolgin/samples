@@ -40,16 +40,16 @@
             "type": "object",
             "defaultValue": {
                 "name": "vnet-hub",
-                "addressPrefix": "10.0.0.0/20"
+                "addressPrefix": "10.1.0.0/20"
             }
         },
         "spokeNetwork": {
             "type": "object",
             "defaultValue": {
                 "name": "vnet-spoke-one",
-                "addressPrefix": "10.100.0.0/16",
+                "addressPrefix": "10.101.0.0/16",
                 "subnetName": "snet-spoke-resources",
-                "subnetPrefix": "10.100.0.0/16",
+                "subnetPrefix": "10.101.0.0/16",
                 "subnetNsgName": "nsg-spoke-one-resources"
             }
         },
@@ -57,9 +57,9 @@
             "type": "object",
             "defaultValue": {
                 "name": "vnet-spoke-two",
-                "addressPrefix": "10.200.0.0/16",
+                "addressPrefix": "10.201.0.0/16",
                 "subnetName": "snet-spoke-resources",
-                "subnetPrefix": "10.200.0.0/16",
+                "subnetPrefix": "10.201.0.0/16",
                 "subnetNsgName": "nsg-spoke-two-resources"
             }
         },
@@ -68,7 +68,7 @@
             "defaultValue": {
                 "name": "vgw-gateway",
                 "subnetName": "GatewaySubnet",
-                "subnetPrefix": "10.0.2.0/27",
+                "subnetPrefix": "10.1.2.0/27",
                 "pipName": "pip-vgw-gateway"
             }
         },
@@ -79,7 +79,7 @@
                 "publicIPAddressName": "pip-bastion",
                 "subnetName": "AzureBastionSubnet",
                 "nsgName": "nsg-hub-bastion",
-                "subnetPrefix": "10.0.1.0/29"
+                "subnetPrefix": "10.1.1.0/29"
             }
         },
         "azureFirewall": {
@@ -88,7 +88,7 @@
                 "name": "AzureFirewall",
                 "publicIPAddressName": "pip-firewall",
                 "subnetName": "AzureFirewallSubnet",
-                "subnetPrefix": "10.0.3.0/26",
+                "subnetPrefix": "10.1.3.0/26",
                 "routeName": "r-nexthop-to-fw"
             }
         },
