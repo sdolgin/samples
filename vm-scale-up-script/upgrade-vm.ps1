@@ -4,7 +4,7 @@
 $ResourceGroupName = 'rg-demo'
 $VMName = 'vm-jumpbox'
 $NewVMSize = 'Standard_L16s_v3'
-$NewOSDiskSku = 'Premium_LRS' # Use Premium SSD or Ultra SSD if available
+$NewOSDiskSku = 'Premium_LRS' # Use Premium SSD 
 $NewOSDiskTier = 'P50' 
 $NewDataDiskSku = 'Premium_LRS' # Specify new data disk SKU (use Premium SSD)
 $newDataDiskTier = 'P50'
